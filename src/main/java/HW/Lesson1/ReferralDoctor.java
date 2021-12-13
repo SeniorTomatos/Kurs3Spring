@@ -1,5 +1,13 @@
 package HW.Lesson1;
 
-public class ReferralDoctor {
+
+import org.springframework.stereotype.Component;
+
+@Component("Referral")
+public class ReferralDoctor implements Referral{
+        public void direct() {
+            System.out.println("Complete");
+        }
+
 
 }
